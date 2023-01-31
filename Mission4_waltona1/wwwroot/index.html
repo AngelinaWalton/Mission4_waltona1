@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>About Me!</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.jpg">
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/StyleSheet.css" rel="stylesheet" />
+
+</head>
+<body>
+    <!--Header-->
+    <h1>Angelina Walton</h1><br/>
+
+    <!--image-->
+    <img src="img/MeDoingSomething.jpg" />
+    <br/>
+    <!--paragraph of what I hope to gain from 413-->
+    <p>What I hope to gain from IS 413: I want to gain a good understanding of C#. While it is important to learn more about this langauge I think even more importantly, learning C# will aid me in my ability to continue learning other programming languages. I also want to gain a better understanding of Object Oriented Programming.</p>
+    <br/>
+    <h4>Top 3 Jobs after Graduation:</h4>
+
+    <!--unordered list-->
+    <ul>
+        <li>Data Analyist</li>
+        <li>Web Design</li>
+        <li>Consulting</li>
+    </ul>
+
+    <!--Generate a form that allows the user to input their percent for each grade type-->
+    <h4>Grade Calculator: (input percent scored in each category, ex: 100, 95, 82.5, etc.)</h4>
+    <form>
+        <label>Assignments:</label>
+        <input id="Assignment" /><br /><br />
+        <label>Group Project:</label>
+        <input id="GroupProj" /><br /><br />
+        <label>Quizzes:</label>
+        <input id="Quiz" /><br /><br />
+        <label>Midterm Exam:</label>
+        <input id="Midterm" /><br /><br />
+        <label>Final Exam:</label>
+        <input id="Final" /><br /><br />
+        <label>INTEX:</label>
+        <input id="Intex" /><br /><br />
+        <label>Final Grade:</label>
+        <span id="Grade" /><br /><br />
+        <input id="SendCalc" type="button" value="Submit" />
+    </form>
+
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="lib/jquery/jquery-3.6.3.min.js"></script>
+
+    <script src="js/Calculation.js"></script>
+
+
+</body>
+</html>
