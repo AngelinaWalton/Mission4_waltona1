@@ -1,0 +1,31 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model calculationModel;
+
+<!--Generate a form that allows the user to input their percent for each grade type-->
+<h4>Grade Calculator: (input percent scored in each category, ex: 100, 95, 82.5, etc.)</h4>
+<form method="post">
+    <label>Assignments:</label>
+    <input id="Assignment" asp-for="assignment"/><br /><br />
+    <label>Group Project:</label>
+    <input id="GroupProj" asp-for="groupProject"/><br /><br />
+    <label>Quizzes:</label>
+    <input id="Quiz" asp-for="quiz"/><br /><br />
+    <label>Midterm Exam:</label>
+    <input id="Midterm" asp-for="midterm"/><br /><br />
+    <label>Final Exam:</label>
+    <input id="Final" asp-for="final"/><br /><br />
+    <label>INTEX:</label>
+    <input id="Intex" asp-for="intex"/><br /><br />
+    <label>Final Grade:</label>
+    <span id="Grade" /><br /><br />
+    <input id="SendCalc" type="submit" value="Submit" />
+
+    <div asp-validation-summary="All"></div>
+</form>
+
+<script src="~/js/Calculation.js"></script>
